@@ -7,6 +7,7 @@ import { ENV } from '../config/env.js';
 import { sendSuccess, sendError } from '../utils/response.js';
 import { User } from '../models/User.js';
 import { logger } from '../utils/logger.js';
+import { sendWelcomeEmail } from '../utils/email.js';
 import type { AuthRequest } from '../middleware/authMiddleware.js';
 
 // In-Memory User Store for resilience when local MongoDB service is offline
@@ -144,6 +145,11 @@ export async function register(req: Request, res: Response) {
 
     const token = signToken(tokenPayload);
     logger.info(`New merchant registered: ${lowerEmail} | Merchant ID: ${merchantId}`);
+
+    // Send Welcome Email asynchronously
+    sendWelcomeEmail(lowerEmail, fullName, merchantId).catch((err) => {
+      logger.warn(`Background welcome email dispatch error: ${err.message}`);
+    });
 
     return sendSuccess(
       res,
