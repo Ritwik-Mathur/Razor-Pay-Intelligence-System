@@ -1,0 +1,50 @@
+export const APP_INFO = {
+  name: 'RPAI',
+  fullName: 'Razor Pay Artificial Intelligence',
+  tagline: 'Multi-Agent Financial Operations Center',
+  secondaryTagline: 'Detect. Decide. Recover.',
+  version: '1.0.0-beta',
+};
+
+export const ROUTES = {
+  HOME: '/',
+  LOGIN: '/login',
+  REGISTER: '/register',
+  FORGOT_PASSWORD: '/forgot-password',
+  DASHBOARD: '/dashboard',
+  PAYMENTS: '/payments',
+  PAYMENT_CREATE: '/payments/create',
+  PAYMENT_SUCCESS: '/payments/success/:id',
+  PAYMENT_FAILED: '/payments/failed/:id',
+  PAYMENT_DETAIL: '/payments/:id',
+  CARDS: '/cards',
+  CUSTOMERS: '/customers',
+  CUSTOMER_DETAIL: '/customers/:id',
+  RISK_CENTER: '/risk-center',
+  RECOVERY: '/recovery',
+  RECONCILIATION: '/reconciliation',
+  AI_ASSISTANT: '/ai-assistant',
+  AUDIT_LOGS: '/audit-logs',
+  PROFILE: '/profile',
+  SETTINGS: '/settings',
+  NOTIFICATIONS: '/notifications',
+
+  // ─── Credit Intelligence Routes ──────────────────────────────────────────
+  CREDIT_OVERVIEW: '/credit',
+  CREDIT_APPLICANTS: '/credit/applicants',
+  CREDIT_APPLY: '/credit/apply',
+  CREDIT_PROFILE: '/credit/profile/:id',
+  CREDIT_RISK: '/credit/risk/:id',
+  CREDIT_BEHAVIOR: '/credit/behavior',
+  CREDIT_SIMULATOR: '/credit/simulator',
+  CREDIT_AI: '/credit/ai',
+  CREDIT_PRIVACY: '/credit/privacy',
+  CREDIT_REVIEW: '/credit/review',
+
+  // ─── Multi-Agent Operations Center Routes ────────────────────────────────
+  AGENTS_LANDING: '/agents',
+  AGENT_DETAIL: '/agents/:id',
+  AGENT_TASK_EXECUTION: '/agents/tasks/:id',
+  ACTION_APPROVALS: '/agents/approvals',
+  AGENT_POLICIES: '/agents/policies',
+};
