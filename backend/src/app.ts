@@ -13,7 +13,15 @@ const app = express();
 app.use(helmet());
 app.use(
   cors({
-    origin: ENV.FRONTEND_URL,
+    origin: (origin, callback) => {
+      // Allow requests with no origin (like mobile apps, curl, server-to-server)
+      if (!origin) return callback(null, true);
+      // Allow localhost and any netlify.app origin
+      if (origin.includes('localhost') || origin.includes('netlify.app') || origin === ENV.FRONTEND_URL) {
+        return callback(null, true);
+      }
+      return callback(null, true); // Permissive for API demo
+    },
     credentials: true,
   })
 );
@@ -37,6 +45,17 @@ app.use('/api/webhooks', webhookRoutes);
 
 // API Routes
 app.use('/api', apiRoutes);
+
+// Root status route
+app.get('/', (req, res) => {
+  res.status(200).json({
+    status: 'online',
+    message: 'RPAI - Razor Pay Artificial Intelligence Backend API is running',
+    version: '1.0.0',
+    documentation: '/api',
+    health: '/health',
+  });
+});
 
 // Health Check
 app.get('/health', (req, res) => {
