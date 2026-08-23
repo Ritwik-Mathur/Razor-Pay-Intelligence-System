@@ -28,6 +28,7 @@ import {
   Sliders,
   Cpu,
   Zap,
+  TrendingUp,
   ShieldCheck as CreditShield,
 } from 'lucide-react';
 
@@ -59,16 +60,17 @@ export const Sidebar: React.FC = () => {
       ],
     },
     {
-      group: 'CREDIT INTELLIGENCE',
+      group: '💳 CREDITGROW AI',
       items: [
-        { name: 'Credit Overview', path: ROUTES.CREDIT_OVERVIEW, icon: Building2, highlight: true },
+        { name: 'Overview', path: ROUTES.CREDIT_OVERVIEW, icon: Building2, highlight: true },
+        { name: 'Business Profile', path: '/credit/profile/demo_app_001', icon: PieChart },
+        { name: 'Cash Flow & Revenue', path: ROUTES.CREDIT_REVENUE, icon: Sliders },
+        { name: 'AI Credit Coach', path: ROUTES.CREDIT_AI, icon: Bot, badge: 'Agent' },
+        { name: 'Credit Simulator', path: ROUTES.CREDIT_SIMULATOR, icon: Calculator },
+        { name: 'Credit Journey', path: ROUTES.CREDIT_JOURNEY, icon: TrendingUp },
+        { name: 'Agent Activity', path: ROUTES.CREDIT_AGENTS, icon: Zap },
+        { name: 'Credit Report', path: ROUTES.CREDIT_REPORT, icon: FileText },
         { name: 'Applicants', path: ROUTES.CREDIT_APPLICANTS, icon: Users },
-        { name: 'Credit Assessment', path: ROUTES.CREDIT_APPLY, icon: FileText },
-        { name: 'Alternative Data', path: ROUTES.CREDIT_PRIVACY, icon: Sliders },
-        { name: 'Risk Profile', path: '/credit/profile/demo_app_001', icon: PieChart },
-        { name: 'Loan Simulator', path: ROUTES.CREDIT_SIMULATOR, icon: Calculator },
-        { name: 'AI Credit Advisor', path: ROUTES.CREDIT_AI, icon: Bot },
-        { name: 'Consent & Privacy', path: ROUTES.CREDIT_PRIVACY, icon: Lock },
       ],
     },
     {

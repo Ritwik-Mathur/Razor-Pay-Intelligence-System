@@ -29,7 +29,7 @@ export const ROUTES = {
   SETTINGS: '/settings',
   NOTIFICATIONS: '/notifications',
 
-  // ─── Credit Intelligence Routes ──────────────────────────────────────────
+  // ─── Credit Intelligence & CreditGrow AI Routes ──────────────────────────────
   CREDIT_OVERVIEW: '/credit',
   CREDIT_APPLICANTS: '/credit/applicants',
   CREDIT_APPLY: '/credit/apply',
@@ -40,6 +40,10 @@ export const ROUTES = {
   CREDIT_AI: '/credit/ai',
   CREDIT_PRIVACY: '/credit/privacy',
   CREDIT_REVIEW: '/credit/review',
+  CREDIT_REVENUE: '/credit/revenue',
+  CREDIT_JOURNEY: '/credit/journey',
+  CREDIT_AGENTS: '/credit/agents',
+  CREDIT_REPORT: '/credit/report',
 
   // ─── Multi-Agent Operations Center Routes ────────────────────────────────
   AGENTS_LANDING: '/agents',

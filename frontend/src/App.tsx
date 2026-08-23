@@ -32,7 +32,7 @@ import { SettingsPage } from './pages/SettingsPage';
 import { NotificationsPage } from './pages/NotificationsPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 
-// ─── Credit Intelligence Pages ───────────────────────────────────────────────
+// ─── Credit Intelligence & CreditGrow AI Pages ────────────────────────────────
 import { CreditOverviewPage } from './pages/credit/CreditOverviewPage';
 import { CreditApplicantsPage } from './pages/credit/CreditApplicantsPage';
 import { CreditApplicationPage } from './pages/credit/CreditApplicationPage';
@@ -42,6 +42,10 @@ import { LoanSimulatorPage } from './pages/credit/LoanSimulatorPage';
 import { AiCreditAdvisorPage } from './pages/credit/AiCreditAdvisorPage';
 import { ConsentPrivacyPage } from './pages/credit/ConsentPrivacyPage';
 import { HumanReviewPage } from './pages/credit/HumanReviewPage';
+import { CreditRevenuePage } from './pages/credit/CreditRevenuePage';
+import { CreditJourneyPage } from './pages/credit/CreditJourneyPage';
+import { CreditAgentsPage } from './pages/credit/CreditAgentsPage';
+import { CreditReportPage } from './pages/credit/CreditReportPage';
 
 // ─── Multi-Agent Operations Center Pages ─────────────────────────────────────
 import AgentsLandingPage from './pages/agents/AgentsLandingPage';
@@ -103,7 +107,7 @@ export const App: React.FC = () => {
                 <Route path={ROUTES.SETTINGS} element={<SettingsPage />} />
                 <Route path={ROUTES.NOTIFICATIONS} element={<NotificationsPage />} />
 
-                {/* ─── Credit Intelligence Module Routes ─────────────────────── */}
+                {/* ─── Credit Intelligence & CreditGrow AI Module Routes ────────── */}
                 <Route path={ROUTES.CREDIT_OVERVIEW} element={<CreditOverviewPage />} />
                 <Route path={ROUTES.CREDIT_APPLICANTS} element={<CreditApplicantsPage />} />
                 <Route path={ROUTES.CREDIT_APPLY} element={<CreditApplicationPage />} />
@@ -113,6 +117,10 @@ export const App: React.FC = () => {
                 <Route path={ROUTES.CREDIT_AI} element={<AiCreditAdvisorPage />} />
                 <Route path={ROUTES.CREDIT_PRIVACY} element={<ConsentPrivacyPage />} />
                 <Route path={ROUTES.CREDIT_REVIEW} element={<HumanReviewPage />} />
+                <Route path={ROUTES.CREDIT_REVENUE} element={<CreditRevenuePage />} />
+                <Route path={ROUTES.CREDIT_JOURNEY} element={<CreditJourneyPage />} />
+                <Route path={ROUTES.CREDIT_AGENTS} element={<CreditAgentsPage />} />
+                <Route path={ROUTES.CREDIT_REPORT} element={<CreditReportPage />} />
 
                 {/* ─── Multi-Agent Operations Center Routes ──────────────────── */}
                 <Route path={ROUTES.AGENTS_LANDING} element={<AgentsLandingPage />} />
