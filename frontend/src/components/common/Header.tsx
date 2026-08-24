@@ -67,6 +67,12 @@ export const Header: React.FC = () => {
           </button>
         </div>
 
+        {/* Razorpay Logo in Title Bar Gap */}
+        <div className="hidden md:flex items-center gap-2 px-3 py-1 bg-slate-50/80 border border-slate-200 rounded-xl shrink-0">
+          <span className="text-[10px] font-extrabold text-slate-400 uppercase tracking-wider">Powered by</span>
+          <img src="/razorpay-official-logo.png" alt="Razorpay" className="h-5 w-auto object-contain" />
+        </div>
+
         {/* Global Search Bar */}
         <div className="flex-1 max-w-md hidden sm:block">
           <button

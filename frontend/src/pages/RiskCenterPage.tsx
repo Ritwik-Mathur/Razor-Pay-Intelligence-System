@@ -137,6 +137,11 @@ export const RiskCenterPage: React.FC = () => {
           </p>
         </div>
 
+        {/* Center Gap: Razorpay Official Logo */}
+        <div className="hidden md:flex items-center justify-center px-6 py-1 border-x border-slate-800">
+          <img src="/razorpay-logo.png" alt="Razorpay" className="h-6 w-auto object-contain brightness-0 invert opacity-80 hover:opacity-100 transition-opacity" />
+        </div>
+
         <div className="flex items-center gap-2 text-xs font-mono">
           <span className="px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-emerald-400 font-bold">
             Risk Engine: ONLINE
