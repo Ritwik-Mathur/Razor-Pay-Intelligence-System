@@ -1,6 +1,7 @@
 # RPAI — Razor Pay Artificial Intelligence
 
 > **AI-Powered Financial Intelligence & Payment Operations Platform**
+> Live Project Link: **https://rpai-official.netlify.app/**
 
 RPAI is a professional, full-stack financial platform providing two connected intelligence layers:
 1. **PAYMENT INTELLIGENCE**: Live Razorpay Test Mode checkout, deterministic fraud risk engine, automated payment recovery, bank reconciliation, and governance audit trails.
