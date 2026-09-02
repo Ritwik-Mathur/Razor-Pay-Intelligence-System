@@ -1,11 +1,17 @@
+<div align="center">
+  <img src="frontend/public/razorpay-official-logo.png" alt="Razorpay" height="60" />
+</div>
+
 # RPAI — Razor Pay Artificial Intelligence
 
 > **AI-Powered Financial Intelligence & Payment Operations Platform**
 > Live Project Link: **https://rpai-official.netlify.app/**
 
+Live Project Link: **[https://rpai.netlify.app/](https://rpai.netlify.app/)**
+
 RPAI is a professional, full-stack financial platform providing two connected intelligence layers:
 1. **PAYMENT INTELLIGENCE**: Live Razorpay Test Mode checkout, deterministic fraud risk engine, automated payment recovery, bank reconciliation, and governance audit trails.
-2. **CREDIT INTELLIGENCE**: Consent-based alternative data analysis, 300–900 explainable credit scoring, cash-flow & affordability engines, financial behavior assessment, loan simulation, and responsible lending controls for individuals and MSMEs.
+2. **CREDIT INTELLIGENCE (CreditGrow AI)**: AI-generated Business Credit Readiness scoring (0–100), transparent factor breakdowns, 6 specialized RPAi AI Agents, credit simulation, and responsible lending controls for individuals and MSMEs.
 
 ---
 
